@@ -1,0 +1,11 @@
+---
+- hosts: servidores
+  become: yes
+  roles:
+    - ssh
+    - apache
+    - mariadb
+    - samba
+    - phpmyadmin
+    - vsftpd
+    - postgresql
